@@ -1,0 +1,11 @@
+{
+  "name": "web2spec",
+  "version": "1.0.0",
+  "bin": {
+    "web2spec": "./bin/cli.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module"
+}
