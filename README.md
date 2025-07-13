@@ -11,5 +11,5 @@ Install web2spec with npm
   npm install web2spec
   cd web2spec
   cd python
-  pip install ...
+  pip install req
 ```
