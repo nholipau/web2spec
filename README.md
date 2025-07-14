@@ -58,9 +58,9 @@ Example:
 ```
 
 ## Authors
-Beatriz Santos (idea) - [Linkedin](https://www.linkedin.com/in/beatriz-santos-19a2731a0) / [Github]() 
+Beatriz Santos (idea) - [Linkedin](https://www.linkedin.com/in/beatriz-santos-19a2731a0) / [Github](https://github.com/Beatryz10) 
 
-Paulo Soares (idea, architecture and implementation) - [Linkedin](https://www.linkedin.com/in/costapsoares) / [Github]()
+Paulo Soares (idea, architecture and implementation) - [Linkedin](https://www.linkedin.com/in/costapsoares) / [Github](https://github.com/nholipau/)
 
 If you liked, have any questions or suggestions, feel free to reach out to us on Linkedin 😊
 
