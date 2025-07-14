@@ -52,16 +52,6 @@ function runPythonScript(urlpar) {
     python.stderr.on('data', (data) => {
       console.error(`stderr: ${data}`);
     });
-    
-    let output = '';
-
-    python.stdout.on('data', (data) => {
-      output += data.toString();
-    });
-
-    python.stderr.on('data', (data) => {
-      console.error(`stderr: ${data}`);
-    });
 
     python.on('close', (code) => {
       if (code !== 0) {
@@ -81,7 +71,7 @@ function runPythonScript(urlpar) {
 runPythonScript()
   .then((output) => {
     if (framework === 'webdriverio' && autorun) {
-      const wdio = spawn('npx', ['wdio', 'run', frameworkUrl, `--spec=../${output}`], {
+      const wdio = spawn('npx', ['wdio', 'run', frameworkUrl, `--spec "../${output}"`], {
         cwd: './wdio',
         stdio: 'inherit',
         shell: true
