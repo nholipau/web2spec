@@ -8,10 +8,11 @@ client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 model = "gemini-2.0-flash"
 
 html = sys.stdin.read()
-url = sys.argv[1]
+framework = sys.argv[1]
+url = sys.argv[2]
 
 prompt = f"""
-You are a test engineer. Based on the HTML below, generate a WebdriverIo spec file that includes:
+You are a test engineer. Based on the HTML below, generate a {framework} spec file that includes:
 
 
 1. Useful selectors (by ID, class, or attributes)
@@ -56,4 +57,5 @@ with open(output_file, "w", encoding="utf-8") as f:
     f.write(spec_text)
 
 # (Opcional) Imprime só o caminho do arquivo
-print(f"✅ Arquivo gerado: {output_file}")
+sys.stdout.write(output_file)
+sys.stdout.flush() # Garante que a saída seja enviada imediatamente
